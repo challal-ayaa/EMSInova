@@ -1,0 +1,89 @@
+.conclusion {
+  background: linear-gradient(135deg, #4caf50 0%, #2e7d32 100%);
+  padding: 80px 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.conclusion-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 60px;
+}
+
+.ambition-section {
+  text-align: center;
+  color: white;
+}
+
+.ambition-section h3 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.ambition-section p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+  opacity: 0.95;
+}
+
+.partnership-cta {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 60px 40px;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.partnership-cta h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.partnership-cta p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  opacity: 0.95;
+}
+
+.partnership-cta button {
+  background: white;
+  color: #4caf50;
+  padding: 15px 40px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.partnership-cta button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 768px) {
+  .ambition-section h3 {
+    font-size: 1.8rem;
+  }
+
+  .ambition-section p {
+    font-size: 1rem;
+  }
+
+  .partnership-cta h3 {
+    font-size: 1.5rem;
+  }
+
+  .partnership-cta p {
+    font-size: 1rem;
+  }
+}
