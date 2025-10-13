@@ -1,6 +1,4 @@
 .conclusion {
-  background: linear-gradient(135deg, #4caf50 0%, #2e7d32 100%);
-  padding: 80px 20px;
   width: 100%;
   box-sizing: border-box;
 }
@@ -8,37 +6,123 @@
 .conclusion-content {
   max-width: 1200px;
   margin: 0 auto;
-  display: grid;
-  gap: 60px;
 }
 
-.ambition-section {
+.vision-section {
+  background: white;
+  padding: 80px 20px;
   text-align: center;
-  color: white;
 }
 
-.ambition-section h3 {
-  font-size: 2.2rem;
-  margin-bottom: 20px;
-  color: white;
+.vision-section .section-title {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #000;
+  text-align: center;
 }
 
-.ambition-section p {
-  font-size: 1.2rem;
-  line-height: 1.8;
+.vision-section .section-description {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto 60px;
+  line-height: 1.6;
+}
+
+.vision-timeline {
+  position: relative;
   max-width: 800px;
   margin: 0 auto;
-  opacity: 0.95;
+  padding: 40px 0;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: #1976d2;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.vision-milestone {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  z-index: 2;
+}
+
+.vision-milestone:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.milestone-dot {
+  width: 20px;
+  height: 20px;
+  background: #1976d2;
+  border: 4px solid white;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px #1976d2;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.milestone-content {
+  background: white;
+  padding: 25px 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  border: 1px solid #f0f0f0;
+  max-width: 350px;
+  margin: 0 30px;
+  transition: all 0.3s ease;
+}
+
+.milestone-content:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 40px rgba(25, 118, 210, 0.15);
+}
+
+.milestone-year {
+  background: #1976d2;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.milestone-content h4 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: #333;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.milestone-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #666;
+  margin: 0;
 }
 
 .partnership-cta {
-  background: rgba(255, 255, 255, 0.1);
+  background: linear-gradient(135deg, #4caf50 0%, #2e7d32 100%);
   padding: 60px 40px;
   border-radius: 20px;
   text-align: center;
   color: white;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 80px;
 }
 
 .partnership-cta h3 {
@@ -71,12 +155,44 @@
 }
 
 @media (max-width: 768px) {
-  .ambition-section h3 {
-    font-size: 1.8rem;
+  .vision-section .section-title {
+    font-size: 2rem;
   }
 
-  .ambition-section p {
+  .vision-section .section-description {
     font-size: 1rem;
+    margin: 0 auto 40px;
+  }
+
+  .vision-timeline {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .timeline-line {
+    left: 30px;
+    transform: none;
+  }
+
+  .vision-milestone {
+    flex-direction: row !important;
+    padding-left: 60px;
+  }
+
+  .milestone-dot {
+    position: absolute;
+    left: 40px;
+  }
+
+  .milestone-content {
+    margin: 0;
+    margin-left: 20px;
+    max-width: none;
+  }
+
+  .partnership-cta {
+    padding: 40px 30px;
+    margin-top: 60px;
   }
 
   .partnership-cta h3 {

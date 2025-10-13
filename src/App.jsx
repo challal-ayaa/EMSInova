@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import Discovery from "./components/Discovery";
 import About from "./components/About";
 import Objectives from "./components/Objectives";
 import Conclusion from "./components/Conclusion";
@@ -12,9 +13,10 @@ function App() {
     <div className="app">
       <Header />
       <Hero />
-      <About />
+      <Discovery />
       <Objectives />
       <Conclusion />
+      <About />
       <Footer />
     </div>
   );

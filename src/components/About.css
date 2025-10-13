@@ -12,9 +12,9 @@
   line-height: 1.6;
 }
 
-.about-content {
+.members-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
   margin-bottom: 50px;
   max-width: 1200px;
@@ -23,62 +23,58 @@
   padding: 0 20px;
 }
 
-.about-card {
+.member-card {
   background: white;
-  padding: 40px 30px;
-  border-radius: 20px;
-  text-align: center;
+  padding: 20px 10px;
+  border-radius: 5px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
 }
 
-.about-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 40px rgba(102, 126, 234, 0.2);
+.member-image {
+  width: 140px;
+  height: 150px;
+  margin: 0 auto 20px;
+  border-radius: 2%;
+  overflow: hidden;
+  border: 1px solid #1976d2;
+  box-shadow: 0 5px 15px rgba(25, 118, 210, 0.3);
 }
 
-.card-icon {
-  font-size: 4rem;
-  margin-bottom: 20px;
-  filter: grayscale(100%) brightness(0.5) sepia(100%) hue-rotate(180deg)
-    saturate(500%);
+.member-image img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 40px;
 }
 
-.about-card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 15px;
-  color: #667eea;
-}
-
-.about-card p {
-  color: #666;
-  line-height: 1.8;
-  font-size: 1rem;
-}
-
-.about-description {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  padding: 40px;
-  border-radius: 20px;
-  color: white;
+.member-card h3 {
+  font-size: 0.9rem;
+  margin-bottom: 30px;
   text-align: center;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
-.about-description p {
-  font-size: 1.2rem;
-  line-height: 1.8;
-  max-width: 900px;
-  margin: 0 auto;
+.member-role {
+  color: #666;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  font-style: italic;
+  text-align: center;
+}
+
+.member-description {
+  color: #666;
+  line-height: 1.7;
+  margin-left: 25px;
+  font-size: 0.9rem;
 }
 
 @media (max-width: 768px) {
-  .about-content {
+  .members-grid {
     grid-template-columns: 1fr;
   }
 
-  .about-description p {
+  .section-description {
     font-size: 1rem;
   }
 }

@@ -4,24 +4,48 @@ const Conclusion = () => {
   return (
     <section className="conclusion">
       <div className="conclusion-content">
-        <div className="ambition-section">
-          <h3>Notre Ambition</h3>
-          <p>
-            Le Club d'Innovation et de Développement de l'EMSI se veut un espace
-            d'apprentissage pratique et collaboratif. Il encourage les étudiants
-            à transformer leurs idées en solutions technologiques réelles, tout
-            en les préparant à devenir les entrepreneurs et ingénieurs innovants
-            de demain.
+        <div className="vision-section">
+          <h3 className="section-title">Notre Vision</h3>
+          <p className="section-description">
+            Une feuille de route claire pour transformer EMSInova en startup
+            d'ingénieurs EMSI
           </p>
-        </div>
-
-        <div className="partnership-cta">
-          <h3>Vous souhaitez devenir partenaire ?</h3>
-          <p>
-            Rejoignez notre réseau et contribuez à former la prochaine
-            génération d'innovateurs
-          </p>
-          <button>Nous Contacter</button>
+          <div className="vision-timeline">
+            <div className="timeline-line"></div>
+            <div className="vision-milestone">
+              <div className="milestone-content">
+                <div className="milestone-year">2025</div>
+                <h4>Fondation & Création du Club</h4>
+                <p>
+                  Création officielle d'EMSInova, recrutement des membres
+                  fondateurs et structuration des premières activités.
+                </p>
+              </div>
+              <div className="milestone-dot"></div>
+            </div>
+            <div className="vision-milestone">
+              <div className="milestone-content">
+                <div className="milestone-year">2026</div>
+                <h4>Développement & Partenariats</h4>
+                <p>
+                  Expansion des activités, établissement de partenariats avec
+                  les entreprises et développement de projets concrets.
+                </p>
+              </div>
+              <div className="milestone-dot"></div>
+            </div>
+            <div className="vision-milestone">
+              <div className="milestone-content">
+                <div className="milestone-year">2027</div>
+                <h4>Transformation en Startup</h4>
+                <p>
+                  Évolution d'EMSInova vers une petite startup dirigée par les
+                  ingénieurs diplômés de l'EMSI.
+                </p>
+              </div>
+              <div className="milestone-dot"></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

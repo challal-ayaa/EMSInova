@@ -38,14 +38,14 @@
 }
 
 .hero-title {
-  font-size: 3.5rem;
+  font-size: 3.3rem;
   font-weight: 800;
   margin-bottom: 20px;
   line-height: 1.2;
 }
 
 .subtitle-text {
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: 600;
 }
 
@@ -57,7 +57,7 @@
 }
 
 .hero-description {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.8;
   margin-bottom: 40px;
   color: #666;
@@ -106,45 +106,58 @@
 .hero-image {
   position: relative;
   height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.floating-card {
-  position: absolute;
-  background: white;
-  padding: 30px;
+.hero-main-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
   border-radius: 20px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
   animation: float 3s ease-in-out infinite;
-  text-align: center;
-  z-index: 1;
 }
 
-.floating-card .icon {
-  font-size: 3rem;
-  margin-bottom: 10px;
-  color: #1976d2;
+.hero-main-image:hover {
+  transform: scale(1.05);
 }
 
-.floating-card h3 {
-  font-size: 1.2rem;
-  color: #333;
+.floating-photo {
+  position: absolute;
+  width: 240px;
+  height: 250px;
+  border-radius: 3%;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border: 3px solid white;
+  animation: float 8s ease-in-out infinite;
+  z-index: 2;
 }
 
-.card-1 {
-  top: 50px;
-  left: 50px;
+.floating-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo-1 {
+  top: 35px;
+  left: 30px;
   animation-delay: 0s;
 }
 
-.card-2 {
-  top: 200px;
-  right: 80px;
+.photo-2 {
+  top: 230px;
+  right: -10px;
   animation-delay: 0.5s;
 }
 
-.card-3 {
-  bottom: 80px;
-  left: 100px;
+.photo-3 {
+  bottom: 10px;
+  left: 0px;
   animation-delay: 1s;
 }
 
@@ -185,17 +198,26 @@
     margin-top: 40px;
   }
 
-  .card-1 {
+  .hero-main-image {
+    max-width: 400px;
+  }
+
+  .floating-photo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .photo-1 {
     top: 20px;
     left: 20px;
   }
 
-  .card-2 {
+  .photo-2 {
     top: 150px;
     right: 20px;
   }
 
-  .card-3 {
+  .photo-3 {
     bottom: 50px;
     left: 50px;
   }
@@ -206,34 +228,46 @@
     font-size: 2rem;
   }
 
-  .floating-card {
-    padding: 20px;
+  .hero-main-image {
+    max-width: 300px;
   }
 
-  .floating-card .icon {
-    font-size: 2rem;
+  .floating-photo {
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
   }
 
-  .floating-card h3 {
-    font-size: 1rem;
+  .photo-1 {
+    top: 10px;
+    left: 10px;
+  }
+
+  .photo-2 {
+    top: 120px;
+    right: 10px;
+  }
+
+  .photo-3 {
+    bottom: 30px;
+    left: 30px;
   }
 }
 
 .intro-section {
-  background: linear-gradient(135deg, #4caf50 0%, #2e7d32 100%);
-  padding: 60px 20px;
+  background: #2e7d32;
+  padding: 10px;
   width: 100%;
   box-sizing: border-box;
 }
 
 .intro-content {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 1400px;
   text-align: center;
 }
 
 .intro-content p {
-  font-size: 1.3rem;
+  font-size: 1rem;
   line-height: 1.8;
   color: white;
   font-weight: 500;

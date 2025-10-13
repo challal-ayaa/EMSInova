@@ -1,0 +1,72 @@
+.discovery {
+  background: white;
+  width: 100%;
+  padding: 80px 20px;
+  box-sizing: border-box;
+}
+
+.discovery .section-title {
+  text-align: center;
+  margin-bottom: 50px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.discovery-content {
+  width: 130%;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.discovery-text {
+  text-align: left;
+}
+
+.discovery-description {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.discovery-image {
+  display: flex;
+  align-items: center;
+}
+
+.discovery-image img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 968px) {
+  .discovery-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .discovery-text .section-title {
+    text-align: center;
+  }
+
+  .discovery-text {
+    text-align: center;
+  }
+
+  .discovery-description {
+    font-size: 1rem;
+  }
+
+  .discovery-image img {
+    max-width: 400px;
+  }
+}

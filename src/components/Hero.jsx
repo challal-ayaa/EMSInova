@@ -1,4 +1,5 @@
 import "./Hero.css";
+import xImage from "../assets/x.webp";
 
 const Hero = () => {
   return (
@@ -10,7 +11,7 @@ const Hero = () => {
               <span className="gradient-text">EMSInova</span>
               <br />
               <span className="subtitle-text">
-                Club d'Innovation & Développement
+                Emsi, Partenaires d'innovation
               </span>
             </h1>
             <p className="hero-description">
@@ -24,17 +25,11 @@ const Hero = () => {
             </div>
           </div>
           <div className="hero-image">
-            <div className="floating-card card-1">
-              <div className="icon"></div>
-              <h3>Innovation</h3>
+            <div className="floating-photo photo-1">
+              <img src={xImage} alt="Innovation" />
             </div>
-            <div className="floating-card card-2">
-              <div className="icon"></div>
-              <h3>Développement</h3>
-            </div>
-            <div className="floating-card card-3">
-              <div className="icon"></div>
-              <h3>Startup</h3>
+            <div className="floating-photo photo-2">
+              <img src={xImage} alt="Développement" />
             </div>
           </div>
         </div>
@@ -43,10 +38,9 @@ const Hero = () => {
       <section className="intro-section">
         <div className="intro-content">
           <p>
-            Le Club d'Innovation et de Développement Technologique EMSInova est
-            un espace d'apprentissage pratique et collaboratif au sein de
-            l'EMSI. Nous croyons que l'innovation naît de la collaboration, de
-            la pratique et de l'audace d'entreprendre.
+            EMSInova est un club au sein de l’EMSI, dédié à l’apprentissage
+            collaboratif et à l’innovation. Il encourage la créativité, la
+            pratique et l’esprit d’initiative chez les étudiants.
           </p>
         </div>
       </section>

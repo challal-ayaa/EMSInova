@@ -31,8 +31,9 @@ const Header = () => {
         </button>
 
         <nav className={`nav ${isMenuOpen ? "active" : ""}`}>
-          <a onClick={() => scrollToSection("about")}>Concept</a>
+          <a onClick={() => scrollToSection("discovery")}>À la découverte</a>
           <a onClick={() => scrollToSection("objectives")}>Objectifs</a>
+          <a onClick={() => scrollToSection("about")}>Organisation</a>
           <button className="cta-button">Rejoindre</button>
         </nav>
       </div>
