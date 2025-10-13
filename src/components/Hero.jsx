@@ -2,9 +2,16 @@ import "./Hero.css";
 import xImage from "../assets/x.webp";
 
 const Hero = () => {
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
-      <section className="hero">
+      <section id="hero" className="hero">
         <div className="hero-content">
           <div className="hero-text">
             <h1 className="hero-title">
@@ -20,8 +27,18 @@ const Hero = () => {
               avec des entreprises sur des projets innovants.
             </p>
             <div className="hero-buttons">
-              <button className="green-btn">Rejoindre le Club</button>
-              <button className="blue-btn">Découvrir</button>
+              <button
+                className="green-btn"
+                onClick={() => scrollToSection("contact")}
+              >
+                Rejoindre le Club
+              </button>
+              <button
+                className="blue-btn"
+                onClick={() => scrollToSection("discovery")}
+              >
+                Découvrir
+              </button>
             </div>
           </div>
           <div className="hero-image">

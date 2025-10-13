@@ -1,0 +1,188 @@
+.contact {
+  background: white;
+  padding: 80px 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.contact-button-container {
+  margin: 40px auto 0;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-trigger-button {
+  background: #2196f3;
+  color: white;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: none;
+  transform: none;
+  box-shadow: none;
+}
+
+.contact-trigger-button:hover {
+  background: #2196f3;
+  color: white;
+  transform: none;
+  box-shadow: none;
+}
+
+.contact-form-container {
+  max-width: 800px;
+  margin: 40px auto 0;
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 12px 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #1976d2;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.cancel-button {
+  background: #e0e0e0;
+  color: #333;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: none;
+  transform: none;
+  box-shadow: none;
+}
+
+.cancel-button:hover {
+  background: #e0e0e0;
+  color: #333;
+  transform: none;
+  box-shadow: none;
+}
+
+.submit-button {
+  background: #2196f3;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: none;
+  transform: none;
+  box-shadow: none;
+}
+
+.submit-button:hover {
+  background: #2196f3;
+  color: white;
+  transform: none;
+  box-shadow: none;
+}
+
+.submit-button:disabled {
+  background: #2196f3;
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.success-message {
+  background: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.error-message {
+  background: #f44336;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 60px 20px;
+  }
+
+  .contact-form-container {
+    padding: 30px 25px;
+    max-width: 95%;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}

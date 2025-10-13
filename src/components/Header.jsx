@@ -8,8 +8,19 @@ const Header = () => {
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      // Close mobile menu first
       setIsMenuOpen(false);
+
+      // Add small delay for mobile menu to close
+      setTimeout(
+        () => {
+          element.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        },
+        isMenuOpen ? 300 : 0
+      );
     }
   };
 
@@ -31,10 +42,18 @@ const Header = () => {
         </button>
 
         <nav className={`nav ${isMenuOpen ? "active" : ""}`}>
+          <a onClick={() => scrollToSection("hero")}>Accueil</a>
           <a onClick={() => scrollToSection("discovery")}>À la découverte</a>
           <a onClick={() => scrollToSection("objectives")}>Objectifs</a>
+          <a onClick={() => scrollToSection("conclusion")}>Notre Vision</a>
           <a onClick={() => scrollToSection("about")}>Organisation</a>
-          <button className="cta-button">Rejoindre</button>
+          <a onClick={() => scrollToSection("contact")}>Nous Contacter</a>
+          <button
+            className="cta-button"
+            onClick={() => scrollToSection("contact")}
+          >
+            Rejoindre
+          </button>
         </nav>
       </div>
     </header>

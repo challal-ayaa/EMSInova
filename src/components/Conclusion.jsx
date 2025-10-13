@@ -2,7 +2,7 @@ import "./Conclusion.css";
 
 const Conclusion = () => {
   return (
-    <section className="conclusion">
+    <section id="conclusion" className="conclusion">
       <div className="conclusion-content">
         <div className="vision-section">
           <h3 className="section-title">Notre Vision</h3>
@@ -14,7 +14,7 @@ const Conclusion = () => {
             <div className="timeline-line"></div>
             <div className="vision-milestone">
               <div className="milestone-content">
-                <div className="milestone-year">2025</div>
+                <div className="milestone-year">2025 - 2026</div>
                 <h4>Fondation & Création du Club</h4>
                 <p>
                   Création officielle d'EMSInova, recrutement des membres
@@ -25,7 +25,7 @@ const Conclusion = () => {
             </div>
             <div className="vision-milestone">
               <div className="milestone-content">
-                <div className="milestone-year">2026</div>
+                <div className="milestone-year">2026 - 2027</div>
                 <h4>Développement & Partenariats</h4>
                 <p>
                   Expansion des activités, établissement de partenariats avec
@@ -36,7 +36,7 @@ const Conclusion = () => {
             </div>
             <div className="vision-milestone">
               <div className="milestone-content">
-                <div className="milestone-year">2027</div>
+                <div className="milestone-year">2027 - 2028</div>
                 <h4>Transformation en Startup</h4>
                 <p>
                   Évolution d'EMSInova vers une petite startup dirigée par les

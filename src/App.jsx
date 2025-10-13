@@ -6,6 +6,7 @@ import Discovery from "./components/Discovery";
 import About from "./components/About";
 import Objectives from "./components/Objectives";
 import Conclusion from "./components/Conclusion";
+import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Objectives />
       <Conclusion />
       <About />
+      <Contact />
       <Footer />
     </div>
   );
