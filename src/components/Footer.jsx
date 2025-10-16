@@ -78,7 +78,7 @@ const Footer = () => {
             <h4>Suivez-nous</h4>
             <div className="social-links">
               <a
-                href="https://www.instagram.com/"
+                href="https://www.instagram.com/emsinova.club?igsh=MXdhamQ5YXoydDBkbw=="
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
@@ -94,7 +94,7 @@ const Footer = () => {
                 </svg>
               </a>
               <a
-                href="https://www.linkedin.com/"
+                href="https://www.linkedin.com/in/emsinova-club-emsi-casablanca-baa71b38a/ "
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"

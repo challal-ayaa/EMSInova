@@ -1,5 +1,6 @@
 import "./Hero.css";
-import xImage from "../assets/x.webp";
+import xImage from "../assets/p1.jpg";
+import yImage from "../assets/p2.jpg";
 
 const Hero = () => {
   const scrollToSection = (id) => {
@@ -46,7 +47,7 @@ const Hero = () => {
               <img src={xImage} alt="Innovation" />
             </div>
             <div className="floating-photo photo-2">
-              <img src={xImage} alt="Développement" />
+              <img src={yImage} alt="Développement" />
             </div>
           </div>
         </div>

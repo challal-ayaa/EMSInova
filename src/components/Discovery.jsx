@@ -1,5 +1,5 @@
 import "./Discovery.css";
-import xImage from "../assets/x.webp";
+import xImage from "../assets/EmsiLogoGr.png";
 
 const Discovery = () => {
   return (

@@ -1,46 +1,42 @@
 import "./About.css";
-import xImage from "../assets/x.webp";
+import xImage from "../assets/p1.jpg";
+import abderrahmaneImg from "../assets/abderrahmane.jpg";
+import elyasseImg from "../assets/elyasse.png";
+import aya1Img from "../assets/aya1.png";
+import aya2Img from "../assets/aya2.png";
 
 const About = () => {
   const members = [
     {
       name: "MEZIANI Abderrahmane ",
       role: "Président",
-      description: "Supervise, représente le club et coordonne l’équipe",
+      description: "Supervise, représente le club et coordonne l'équipe",
+      image: abderrahmaneImg,
     },
     {
       name: "EL HATTAB ELIBRAHIMI Elyasse",
       role: "Vice-Président & Designer graphique",
       description: [
         "Assiste le président dans la gestion du club",
-        "Conçoit l’identité graphique, les affiches et les supports visuels",
+        "Conçoit l'identité graphique, les affiches et les supports visuels",
       ],
-    },
-    {
-      name: "OUDRISS Youssef",
-      role: "Responsable Technique",
-      description:
-        "Assure la qualité technique et le bon fonctionnement des outils utilisés",
+      image: elyasseImg,
     },
     {
       name: "CHALLAL Aya",
       role: "Responsable Communication",
       description: [
-        "Gère l’image du club et communique avec les entreprises partenaires",
+        "Gère l'image du club et communique avec les entreprises partenaires",
         "Gère et anime les réseaux sociaux du club",
       ],
+      image: aya1Img,
     },
     {
       name: "EL MOUSSAOUI Aya",
       role: "Rédactrice officielle",
       description:
         "Rédige les documents officiels du club, rapports, présentations et publications.",
-    },
-    {
-      name: "Membres actifs",
-      role: "Collaborateurs polyvalents",
-      description:
-        "Participent aux activités et contribuent à la réalisation des projets du club.",
+      image: aya2Img,
     },
   ];
 
@@ -54,7 +50,7 @@ const About = () => {
         {members.map((member, index) => (
           <div key={index} className="member-card">
             <div className="member-image">
-              <img src={xImage} alt={member.name} />
+              <img src={member.image} alt={member.name} />
             </div>
             <h3 style={{ color: "#1976d2" }}>{member.name}</h3>
             <p className="member-role">{member.role}</p>

@@ -14,7 +14,7 @@
 }
 
 .discovery-content {
-  width: 130%;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
   display: grid;
@@ -38,20 +38,23 @@
 .discovery-image {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .discovery-image img {
   width: 100%;
-  max-width: 300px;
+  max-width: 450px;
   height: auto;
   border-radius: 20px;
   transition: transform 0.3s ease;
+  object-fit: contain;
 }
 
 @media (max-width: 968px) {
   .discovery-content {
     grid-template-columns: 1fr;
     gap: 40px;
+    width: 100%;
   }
 
   .discovery-text .section-title {
@@ -66,7 +69,51 @@
     font-size: 1rem;
   }
 
+  .discovery-image {
+    justify-content: center;
+  }
+
   .discovery-image img {
-    max-width: 400px;
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .discovery {
+    padding: 60px 15px;
+  }
+
+  .discovery-content {
+    gap: 30px;
+    padding: 0 10px;
+  }
+
+  .discovery-description {
+    font-size: 0.95rem;
+  }
+
+  .discovery-image img {
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .discovery {
+    padding: 40px 10px;
+  }
+
+  .discovery-content {
+    gap: 20px;
+    padding: 0 5px;
+  }
+
+  .discovery-description {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .discovery-image img {
+    max-width: 220px;
+    border-radius: 15px;
   }
 }
